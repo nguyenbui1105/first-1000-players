@@ -23,17 +23,16 @@ Sắp có: `steam-page-wishlist`, `web-portal-publisher`, `feedback-analytics`, 
 
 ## Cài đặt
 
-Thay `your-username` bằng tài khoản GitHub chứa repo này.
 
 **Claude Code (plugin)**
 ```
-/plugin marketplace add your-username/first-1000-players
+/plugin marketplace add nguyenbui1105/first-1000-players
 /plugin install first-1000-players@first-1000-players
 ```
 
 **Agent hỗ trợ chuẩn mở [Agent Skills](https://agentskills.io)**
 ```bash
-npx skills add your-username/first-1000-players
+npx skills add nguyenbui1105/first-1000-players
 ```
 
 **Thủ công** — chép các thư mục trong `skills/` vào:

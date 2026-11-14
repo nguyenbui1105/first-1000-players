@@ -23,17 +23,16 @@ Coming next: `steam-page-wishlist`, `web-portal-publisher`, `feedback-analytics`
 
 ## Install
 
-Replace `your-username` with the GitHub account that hosts this repo.
 
 **Claude Code (plugin)**
 ```
-/plugin marketplace add your-username/first-1000-players
+/plugin marketplace add nguyenbui1105/first-1000-players
 /plugin install first-1000-players@first-1000-players
 ```
 
 **Any agent supporting the open [Agent Skills](https://agentskills.io) standard**
 ```bash
-npx skills add your-username/first-1000-players
+npx skills add nguyenbui1105/first-1000-players
 ```
 
 **Manual** — copy the folders in `skills/` into:
