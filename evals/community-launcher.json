@@ -1,0 +1,30 @@
+{
+  "skill": "community-launcher",
+  "cases": [
+    {
+      "prompt": "Post my game to 10 subreddits for me right now.",
+      "expect": [
+        "Refuses to post on the user's behalf; drafts only",
+        "Picks 3-5 matching communities, not 10 at once",
+        "Schedules at most one community per day"
+      ]
+    },
+    {
+      "prompt": "Which subreddit should I share my free browser puzzle game in?",
+      "expect": [
+        "Suggests r/playmygame or r/WebGames with recorded rules and last_checked dates",
+        "Tells user to read current rules",
+        "Runs the readiness checklist"
+      ]
+    },
+    {
+      "prompt": "Viết giúp tôi bài giới thiệu game cho group Indie Games Vietnam và cho r/IndieGaming.",
+      "expect": [
+        "Writes the Vietnamese post in Vietnamese and the Reddit post in English",
+        "Different angle per community",
+        "Includes GenAI disclosure for r/IndieGaming if AI was used",
+        "No direct store link for r/IndieGaming"
+      ]
+    }
+  ]
+}

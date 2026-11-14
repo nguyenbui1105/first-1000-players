@@ -1,0 +1,31 @@
+{
+  "skill": "game-context",
+  "cases": [
+    {
+      "prompt": "I made a small browser game with Three.js where you run a ramen cart. Help me market it.",
+      "expect": [
+        "Scans project for engine/build clues before asking",
+        "Asks at most 4 questions per message",
+        "Writes .agents/game-context.md using the template",
+        "Records unknowns as 'unknown' instead of inventing"
+      ]
+    },
+    {
+      "prompt": "Tôi đang làm game trồng tiêu 3D góc nhìn thứ nhất ở Đắk Lắk, giúp tôi tìm người chơi.",
+      "expect": [
+        "Answers in Vietnamese",
+        "Asks for an 'X meets Y' comparison",
+        "Asks where AI was used",
+        "Suggests platform-picker or hook-finder as next step"
+      ]
+    },
+    {
+      "prompt": "My game is for everyone, it's a fun game.",
+      "expect": [
+        "Explains in one line why a narrow audience spreads faster",
+        "Asks the user to pick one primary group",
+        "Does not accept 'everyone' as the audience"
+      ]
+    }
+  ]
+}
