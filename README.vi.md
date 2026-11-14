@@ -27,13 +27,13 @@ AI giúp làm game rẻ hơn rất nhiều, nhưng sự chú ý của người c
 
 <table>
 <tr>
-<td align="center" width="33%"><h3>~20.000</h3>game ra mắt trên Steam năm 2025</td>
-<td align="center" width="33%"><h3>~3%</h3>trong số đó đạt 1.000 review</td>
-<td align="center" width="33%"><h3>~$249</h3>doanh thu trung vị (theo một ước tính)</td>
+<td align="center" width="33%"><h3>24.000+</h3>game ra mắt trên Steam từ đầu năm 2026 (~78 game mỗi ngày)</td>
+<td align="center" width="33%"><h3>39%</h3>trong số đó khai có dùng AI tạo sinh (gần 50% trong tháng 10)</td>
+<td align="center" width="33%"><h3>~$1.700</h3>doanh thu trung vị tính đến nay của game trả phí ra năm 2026</td>
 </tr>
 </table>
 
-<sub>Nguồn và lưu ý tại <a href="references/market.md">references/market.md</a>.</sub>
+<sub>Số liệu đến đầu tháng 11/2026. Nguồn và lưu ý tại <a href="references/market.md">references/market.md</a>.</sub>
 
 Đã có bộ skill marketing cho SaaS, đã có bộ skill để code game. **First 1000 Players** lo đúng khâu ở giữa: **phân phối cho game nhỏ làm bằng AI**. Đó là web portal, itch.io, Steam, video ngắn, cộng đồng, và câu hỏi "có nên khai dùng AI không" mà vibecoder nào cũng gặp.
 

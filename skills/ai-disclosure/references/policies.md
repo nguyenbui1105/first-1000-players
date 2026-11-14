@@ -32,7 +32,7 @@ last_checked: 2026-11-14 (compiled from cited sources — verify on the official
 
 - Game Oracle (Dec 2025), 9,879 paid games Jan–Oct 2025: games with an AI disclosure had a median of 4 reviews in month one vs 7 without; 19.8% vs 15.2% had zero reviews; after controls, ~53% fewer reviews. **Correlation only** — AI-using games may also have smaller budgets and less polish.
 - gamedevaihub analysis of 352,296 Steam reviews: where AI use was "discovered", 79% of AI-mentioning reviews were negative; where AI was the selling point, 26%. Art and store images draw the most criticism; code only 2.4% of complaints.
-- ~20% of 2025 Steam releases carried an AI disclosure (Totally Human Media / Game Oracle).
+- ~20% of 2025 Steam releases carried an AI disclosure (Totally Human Media / Game Oracle). In 2026 the share rose to 39.1% of releases (Jan 1 – Nov 3) and 49.7% in October 2026 (SteamDB via GamesChart). AI disclosure is now common, so being specific about *what* AI did matters more than whether it was used.
 
 Takeaways: AI-assisted **code** draws little backlash; **visible art**, especially on the store page, draws the most; **concealment** is the worst option.
 
@@ -47,3 +47,4 @@ Takeaways: AI-assisted **code** draws little backlash; **visible art**, especial
 - https://gamedevaihub.com/will-players-punish-ai-art-in-games/
 - https://www.totallyhuman.io/blog/games-with-ai-disclosures-have-grossed-an-estimated-660m-on-steam
 - https://www.threadotter.com/subreddit-rules/indiegaming
+- https://gameschart.com/data/steam-ai-disclosure-count/

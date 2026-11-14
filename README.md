@@ -27,13 +27,13 @@ AI made building games cheap. Attention didn't get any cheaper.
 
 <table>
 <tr>
-<td align="center" width="33%"><h3>~20,000</h3>games launched on Steam in 2025</td>
-<td align="center" width="33%"><h3>~3%</h3>of them reached 1,000 reviews</td>
-<td align="center" width="33%"><h3>~$249</h3>median gross revenue (one estimate)</td>
+<td align="center" width="33%"><h3>24,000+</h3>games launched on Steam in 2026 so far (~78 a day)</td>
+<td align="center" width="33%"><h3>39%</h3>of them disclose generative AI (nearly 50% in October)</td>
+<td align="center" width="33%"><h3>~$1,700</h3>median lifetime gross of a paid 2026 release, so far</td>
 </tr>
 </table>
 
-<sub>Sources and caveats in <a href="references/market.md">references/market.md</a>.</sub>
+<sub>Data to early November 2026. Sources and caveats in <a href="references/market.md">references/market.md</a>.</sub>
 
 Marketing skill packs exist for SaaS. Game-dev skill packs exist for writing code. **First 1000 Players** covers the step in between: **distribution for small, AI-built games**. That means web portals, itch.io, Steam, short video, communities, and the AI-disclosure question every vibecoder now faces.
 

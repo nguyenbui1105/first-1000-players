@@ -30,7 +30,7 @@ Common technical requirements: HTML5/WebGL build, fast first load, works in an i
 
 ## 3. Steam (summary — the planned `steam-page-wishlist` skill will go deeper)
 
-- About 20,000 games released in 2025 (~55/day); 2026 pace ~69.5/day (SteamDB, Aug 2026).
+- About 20,000 games released in 2025 (~55/day); 24,055 released Jan 1 – Nov 3, 2026 (~78/day, SteamDB via GamesChart).
 - June 2026 homepage redesign: entry to "Popular Upcoming" now estimated at ~80,000–100,000 wishlists (was ~7,000). New **Personal Calendar** surfaces upcoming games per player; early analysis suggests ~8,000–30,000 wishlists to appear, and it can bring 300–3,000 wishlists/day around launch.
 - Next Fest: one entry per game; the best predictor of results is wishlists **before** the fest. Games entering with < 1,000 wishlists gained a median of ~322–462.
 - Store visibility is increasingly personalized → the page must look clearly like its genre.
@@ -38,7 +38,8 @@ Common technical requirements: HTML5/WebGL build, fast first load, works in an i
 
 ## 4. Revenue reality check
 
-- Median 2025 Steam release earned roughly $249 gross by one estimate (Gamalytic, Oct 2025); other methods give up to ~$1,700. 65.9% under $1,000.
+- Median 2025 Steam release earned roughly $249 gross by one estimate (Gamalytic, Oct 2025, all games); other methods give up to ~$1,700. 65.9% under $1,000.
+- Paid 2026 releases: median lifetime gross so far ~$1,677 (WeLoveIt/VaporLens, Nov 2026; paid games with at least one review, still accumulating).
 - One published CrazyGames example: 451,327 plays → €556.92 (~€1.2 per 1,000 plays).
 - Portals are excellent for **players and data**, rarely for income on their own.
 
@@ -48,6 +49,8 @@ Common technical requirements: HTML5/WebGL build, fast first load, works in an i
 - https://howtomarketagame.com/2025/03/26/benchmarks-how-many-wishlists-can-i-get-from-steam-next-fest/
 - https://www.steampageanalyzer.com/blog/how-many-games-release-on-steam
 - https://www.steampageanalyzer.com/blog/indie-game-sales-statistics
+- https://www.steampageanalyzer.com/blog/median-steam-game-2026
+- https://gameschart.com/data/steam-ai-disclosure-count/
 - https://app.cinevva.com/guides/publish-game-poki
 - https://app.cinevva.com/guides/publish-game-crazygames
 - https://portalready.world/portals/
