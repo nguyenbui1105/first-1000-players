@@ -7,7 +7,7 @@
 [![Validate skills](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml/badge.svg)](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-open%20standard-3DDC84?style=flat-square)](https://agentskills.io)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-FFC547?style=flat-square)](#-install)
-[![Skills](https://img.shields.io/badge/skills-5-FF5A5F?style=flat-square)](#-the-skills)
+[![Skills](https://img.shields.io/badge/skills-6-FF5A5F?style=flat-square)](#-the-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
@@ -46,6 +46,7 @@ Marketing skill packs exist for SaaS. Game-dev skill packs exist for writing cod
 | <img src="assets/icon-hook-finder.png" width="44"> | [**hook-finder**](skills/hook-finder/SKILL.md) | find the moments strangers stop scrolling for and cut them into TikTok / Shorts clips |
 | <img src="assets/icon-community-launcher.png" width="44"> | [**community-launcher**](skills/community-launcher/SKILL.md) | share your game on Reddit, Discord and local groups without breaking rules (drafts only) |
 | <img src="assets/icon-ai-disclosure.png" width="44"> | [**ai-disclosure**](skills/ai-disclosure/SKILL.md) | write honest AI disclosures for Steam, itch.io and Reddit, and reduce backlash |
+| <img src="assets/icon-steam-page-wishlist.png" width="44"> | [**steam-page-wishlist**](skills/steam-page-wishlist/SKILL.md) | get a Steam page up early, audit capsule art and tags, and plan wishlists, demo and Next Fest |
 
 ## ⚡ Install
 
@@ -84,7 +85,9 @@ flowchart LR
     C --> D["🤝 community-launcher<br/>post without spamming"]
     A -.-> E["🏷️ ai-disclosure<br/>honest AI labels"]
     E -.-> D
-    D --> F(("📈 measure,<br/>repeat"))
+    B -. "Steam path" .-> G["❤️ steam-page-wishlist<br/>page early, wishlists, Next Fest"]
+    G --> F(("📈 measure,<br/>repeat"))
+    D --> F
     F --> C
 ```
 
@@ -109,7 +112,7 @@ Have your own results? [Add your case study](CONTRIBUTING.md#case-studies).
 ## 🗺️ Roadmap
 
 - [x] `game-context` · `platform-picker` · `hook-finder` · `community-launcher` · `ai-disclosure`
-- [ ] `steam-page-wishlist`: store page audit, tags, demo, Next Fest, Personal Calendar
+- [x] `steam-page-wishlist`: store page audit, capsule size check, wishlists, demo, Next Fest, Personal Calendar
 - [ ] `web-portal-publisher`: CrazyGames / Poki / itch.io requirements, WebGL size checks
 - [ ] `feedback-analytics`: minimal events, funnels, drop-off points
 - [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`

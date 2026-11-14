@@ -23,7 +23,7 @@
         "Writes the Vietnamese post in Vietnamese and the Reddit post in English",
         "Different angle per community",
         "Includes GenAI disclosure for r/IndieGaming if AI was used",
-        "No direct store link for r/IndieGaming"
+        "Tells the user to check r/IndieGaming's current sidebar for link rules"
       ]
     }
   ]

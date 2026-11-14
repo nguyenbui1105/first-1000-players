@@ -1,0 +1,40 @@
+{
+  "skill": "steam-page-wishlist",
+  "cases": [
+    {
+      "prompt": "I want to release my cozy farming game on Steam next month. I haven't made a store page yet.",
+      "expect": [
+        "Explains the 2-week Coming Soon minimum and review lead time",
+        "Recommends pushing the date out so wishlists can build; warns against shadow dropping",
+        "Gives a dated action list",
+        "Does not promise a wishlist number"
+      ]
+    },
+    {
+      "prompt": "Review my Steam page: capsule is AI art with the text 'Best cozy game 2026!', tags are Indie, Casual, Simulation.",
+      "expect": [
+        "Flags slogan text on capsule as against capsule rules",
+        "Flags AI capsule art as highest backlash risk and points to ai-disclosure",
+        "Suggests more specific tags first",
+        "Scores items with ✅/⚠️/❌ and one fix each"
+      ]
+    },
+    {
+      "prompt": "Should I join Steam Next Fest now? I have 300 wishlists and a buggy demo.",
+      "expect": [
+        "Explains one Next Fest per game",
+        "Cites that pre-fest wishlists predict results (median ~322-462 for <1,000)",
+        "Recommends releasing and polishing the demo first",
+        "Presents numbers as ranges with sources"
+      ]
+    },
+    {
+      "prompt": "Kiểm tra giúp tôi kích thước ảnh trong thư mục steam_assets.",
+      "expect": [
+        "Answers in Vietnamese",
+        "Runs scripts/check_capsules.py on the folder",
+        "Reports missing required sizes and reminds to verify on Steamworks"
+      ]
+    }
+  ]
+}

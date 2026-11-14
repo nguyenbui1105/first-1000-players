@@ -7,7 +7,7 @@
 [![Validate skills](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml/badge.svg)](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-open%20standard-3DDC84?style=flat-square)](https://agentskills.io)
 [![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-FFC547?style=flat-square)](#-cài-đặt)
-[![Skills](https://img.shields.io/badge/skills-5-FF5A5F?style=flat-square)](#-các-skill)
+[![Skills](https://img.shields.io/badge/skills-6-FF5A5F?style=flat-square)](#-các-skill)
 [![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
@@ -46,6 +46,7 @@ AI giúp làm game rẻ hơn rất nhiều, nhưng sự chú ý của người c
 | <img src="assets/icon-hook-finder.png" width="44"> | [**hook-finder**](skills/hook-finder/SKILL.md) | tìm khoảnh khắc khiến người lạ dừng lướt và cắt thành clip TikTok / Shorts |
 | <img src="assets/icon-community-launcher.png" width="44"> | [**community-launcher**](skills/community-launcher/SKILL.md) | giới thiệu game trên Reddit, Discord, nhóm Việt Nam mà không vi phạm luật (chỉ soạn nháp) |
 | <img src="assets/icon-ai-disclosure.png" width="44"> | [**ai-disclosure**](skills/ai-disclosure/SKILL.md) | viết phần khai báo AI trung thực cho Steam, itch.io, Reddit và giảm phản ứng tiêu cực |
+| <img src="assets/icon-steam-page-wishlist.png" width="44"> | [**steam-page-wishlist**](skills/steam-page-wishlist/SKILL.md) | mở trang Steam sớm, kiểm tra ảnh capsule và tag, lên kế hoạch wishlist, demo và Next Fest |
 
 ## ⚡ Cài đặt
 
@@ -84,7 +85,9 @@ flowchart LR
     C --> D["🤝 community-launcher<br/>đăng bài không spam"]
     A -.-> E["🏷️ ai-disclosure<br/>khai báo AI trung thực"]
     E -.-> D
-    D --> F(("📈 đo lường,<br/>lặp lại"))
+    B -. "nếu lên Steam" .-> G["❤️ steam-page-wishlist<br/>mở trang sớm, wishlist, Next Fest"]
+    G --> F(("📈 đo lường,<br/>lặp lại"))
+    D --> F
     F --> C
 ```
 
@@ -109,7 +112,7 @@ Bạn có kết quả của riêng mình? [Thêm case study của bạn](CONTRIB
 ## 🗺️ Lộ trình
 
 - [x] `game-context` · `platform-picker` · `hook-finder` · `community-launcher` · `ai-disclosure`
-- [ ] `steam-page-wishlist`: kiểm tra trang Steam, tag, demo, Next Fest, Personal Calendar
+- [x] `steam-page-wishlist`: kiểm tra trang Steam, kích thước ảnh capsule, wishlist, demo, Next Fest, Personal Calendar
 - [ ] `web-portal-publisher`: yêu cầu của CrazyGames / Poki / itch.io, kiểm tra dung lượng WebGL
 - [ ] `feedback-analytics`: sự kiện tối thiểu, funnel, điểm người chơi bỏ cuộc
 - [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`

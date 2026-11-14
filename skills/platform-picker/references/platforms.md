@@ -28,7 +28,7 @@ Common technical requirements: HTML5/WebGL build, fast first load, works in an i
 - Since 2026-11-03 the "No AI" filter also applies to search results; with it on, browse shrinks from 1.77M+ to under 425K visible projects. Untagged AI content in some categories is not indexed. Mass-uploading automated AI content is treated as spam.
 - Traditional algorithms (pathfinding, procedural generation) do not need disclosure.
 
-## 3. Steam (summary — the planned `steam-page-wishlist` skill will go deeper)
+## 3. Steam (summary; the `steam-page-wishlist` skill goes deeper)
 
 - About 20,000 games released in 2025 (~55/day); 24,055 released Jan 1 – Nov 3, 2026 (~78/day, SteamDB via GamesChart).
 - June 2026 homepage redesign: entry to "Popular Upcoming" now estimated at ~80,000–100,000 wishlists (was ~7,000). New **Personal Calendar** surfaces upcoming games per player; early analysis suggests ~8,000–30,000 wishlists to appear, and it can bring 300–3,000 wishlists/day around launch.

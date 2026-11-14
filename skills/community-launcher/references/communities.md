@@ -10,28 +10,48 @@ Rules change often. Each entry records what was observed and when. **Always open
 
 ## 1. Reddit
 
+Verification status (2026-11-14): reddit.com could not be read directly from our research tools, so entries rely on third-party summaries and archived mod posts. Each entry links the official rules page; **read it on the day you post**.
+
 ### r/playmygame
-- last_checked: 2026-08 (third-party rule summary)
+- last_checked: 2026-11-14 (Thread Otter summary, Aug 2026; mod FAQ, Jul 2024)
+- Official rules: https://www.reddit.com/r/playmygame/about/rules
 - Fit: free, instantly playable games looking for feedback
-- Rules observed: game must be free to play right away; include description and a direct link; about one post per month; if giving away keys, give at least 10 to random commenters.
+- Rules observed: the game must be playable for free **now** (free game or free demo/build); paid-only or unplayable posts are removed. Include a short description of what the game is. Use the correct flair. Key giveaways must offer at least 10 keys to random commenters.
+- Tip from the mod FAQ: Reddit allows one post type, so post the media (video/GIF), then add the description and link as your own first comment.
 
 ### r/IndieGaming
-- last_checked: 2026-08 (third-party rule summary)
+- last_checked: 2026-11-14 (Thread Otter summary, Oct 2026)
+- Official rules: https://www.reddit.com/r/indiegaming/about/rules
 - Fit: showing gameplay to players
-- Rules observed: account at least 1 week old; one post every 2 weeks; no store pages or direct download links; **must disclose any GenAI use in the game or its promotion**.
+- Rules observed (Oct 2026 summary): self-promotion and links allowed, but low-effort pitches are not welcome; work-in-progress posts that invite feedback do well.
+- ⚠️ Reported in Aug 2026 but **not reconfirmed** in the Oct 2026 summary: account at least 1 week old, one post every 2 weeks, no store/download links, mandatory GenAI disclosure. Check the sidebar; if unsure, disclose AI use anyway.
 
 ### r/indiegames
-- last_checked: 2026-08 (third-party rule summary)
-- Fit: gameplay showcase
-- Rules observed: posts must include gameplay footage; use flair.
+- last_checked: 2026-11-14 (mod announcement, Aug 2024)
+- Official rules: https://www.reddit.com/r/indiegames/about/rules
+- Fit: gameplay showcase to players
+- Rules observed: game promotion is allowed, but **no self-promotion disguised as a feedback request**. Use flair (e.g. Promotion, Upcoming); posts with gameplay footage do best.
+
+### r/IndieDev
+- last_checked: 2026-11-14 (third-party guides, 2026)
+- Official rules: https://www.reddit.com/r/IndieDev/about/rules
+- Fit: devlogs, trailers and screenshots; described as friendlier to self-promotion than r/gamedev.
 
 ### r/WebGames
-- last_checked: not yet verified — check the sidebar before posting
-- Fit: browser games playable instantly
+- last_checked: 2026-11-14 (subreddit wiki via archive)
+- Official rules: https://www.reddit.com/r/WebGames/about/rules
+- Fit: anything that runs in a browser tab
+- Rules observed: don't advertise a website in the post title; portals with excessive ads or spammy behaviour can be blacklisted. Read the wiki's section for original games before posting.
 
 ### r/gamedev
-- last_checked: not yet verified
-- Fit: **knowledge posts** (what you learned, data, postmortems), not promotion. Self-promo rules are strict; share lessons, not links.
+- last_checked: 2026-11-14 (subreddit wiki and mod posts via archive)
+- Official rules: https://www.reddit.com/r/gamedev/about/rules
+- Fit: **knowledge posts** (what you learned, data, postmortems), not promotion.
+- Rules observed: self-promotion is permitted only if it is not self-serving; mods remove promotion framed as a "feedback" request. Use the recurring Screenshot Saturday thread or sister subs (r/gameDevTesting for testers) for showing your game.
+
+### Habits that apply everywhere
+- Participate before you promote: keep self-promotion to roughly 1 in 10 of your posts and comments.
+- Never post the same media to several subreddits on the same day (crosspost spam is a fast route to bans).
 
 ## 2. Vietnam
 
@@ -66,6 +86,12 @@ Vietnamese Facebook gaming groups and TikTok: large reach but rules differ per g
 ## 4. Sources
 
 - https://www.threadotter.com/subreddit-rules/playmygame
+- https://lr.ggtyler.dev/r/playmygame/comments/1eg08dh/how_to_avoid_having_your_posts_removed_version_2 (archived mod FAQ, Jul 2024)
+- https://redlib.belloworld.it/r/indiegames (archived mod announcement, Aug 2024)
+- https://axebps-redlib.hf.space/r/WebGames/wiki/index (archived wiki)
+- https://cal1.lr.ggtyler.dev/r/gamedev/wiki/good_posts (archived wiki)
+- https://presskit.gg/field-guides/reddit-marketing-indie-games
+- https://polylusion-games-site.pages.dev/blog/indie-game-dev-subreddit
 - https://www.threadotter.com/subreddit-rules/indiegaming
 - https://okara.ai/blog/subreddits-that-allow-self-promotion
 - https://www.steampageanalyzer.com/blog/reddit-indie-game-marketing
