@@ -8,6 +8,7 @@
 - Sledding Game case: added sources and context (discount, Game Pass)
 - Validator: real YAML parsing (PyYAML or fallback), link and anchor checks for README files
 - `docs/launch-kit.md`: repo settings and announcement drafts
+- International focus: regional community sections with a template, generalized local-licensing guidance, evals in Spanish, Portuguese, Japanese, Chinese and Vietnamese
 
 ## 0.1.0 — 2026-11-14
 
@@ -24,4 +25,4 @@ First public draft.
 
 - `web-portal-publisher`, `feedback-analytics`
 - `launch-checklist`, `devlog-buildinpublic`, `creator-outreach`
-- `sea-vietnam-playbook`
+- `regional-playbooks` (per-country communities, events and publishing rules)

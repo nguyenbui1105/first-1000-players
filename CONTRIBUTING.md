@@ -19,8 +19,12 @@ Thanks for helping vibecoders find players. This repo only stays useful if its a
 
 ## Case studies
 
-Real results beat advice. Add your game under `case-studies/<your-game>/` using the template in `case-studies/pepper-farm-daklak/`. Bad numbers are welcome — they teach the most.
+Real results beat advice. Add your game under `case-studies/<your-game>/` using the template in `case-studies/_template/`. Bad numbers are welcome — they teach the most.
+
+## Regional communities
+
+Where players and devs gather differs a lot by country and language. `skills/community-launcher/references/communities.md` has a **Regional communities** section, one subsection per country. To add yours, copy the template there and include for each community: link, size, what fits, rules you checked, and `last_checked`. Local events, festivals and publishing rules (e.g. game licensing) are welcome too.
 
 ## Translations
 
-Docs live in English (`README.md`) and Vietnamese (`README.vi.md`). To add a language, create `docs/i18n/README.<lang-code>.md` and link it from the language bar at the top of both READMEs. Skills themselves stay in English (agents trigger on them most reliably) and are written to **answer in the user's language**.
+English (`README.md`) is the primary language. Translations so far: Vietnamese (`README.vi.md`). To add a language, create `docs/i18n/README.<lang-code>.md` and link it from the language bar at the top of the READMEs. Skills themselves stay in English (agents trigger on them most reliably) and are written to **answer in the user's language**.

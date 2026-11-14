@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
-[English](README.md) · **Tiếng Việt**
+[English](README.md) · **Tiếng Việt** · [+ thêm ngôn ngữ của bạn](docs/i18n/README.md)
 
 **Bạn đã làm game bằng AI. Giờ hãy đưa game đến người chơi.**
 
@@ -101,13 +101,13 @@ Mọi skill đọc chung file `.agents/game-context.md`, nên bạn chỉ cần 
 | 🏷️ **Minh bạch về AI** | Không skill nào giúp che giấu việc dùng AI. Bị phát hiện che giấu còn tệ hơn tự khai. |
 | 📅 **Số liệu có ngày** | Mọi con số đều có nguồn và ngày kiểm tra (`last_checked`), và skill luôn nhắc bạn kiểm tra lại. |
 | 🎲 **Không hứa viral** | Câu chuyện viral là của số ít người may mắn. Skill đặt mục tiêu thực tế và đo lường. |
-| 🌏 **Ngôn ngữ của bạn** | Tài liệu có tiếng Anh và tiếng Việt, hoan nghênh thêm bản dịch. |
+| 🌍 **Toàn cầu** | Skill trả lời theo ngôn ngữ bạn viết. Danh sách cộng đồng theo khu vực và bản dịch do người đóng góp khắp thế giới bổ sung. |
 
 ## 🌶️ Case study
 
-Mọi skill được thử trước trên một game thật: **game trồng tiêu góc nhìn thứ nhất lấy bối cảnh Đắk Lắk**. Nhật ký công khai tại [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) ghi lại mọi clip, bài đăng và con số, kể cả số liệu xấu.
+Case study đầu tiên là game của chính người duy trì repo: **game trồng tiêu góc nhìn thứ nhất lấy bối cảnh Tây Nguyên, Việt Nam**. Nhật ký công khai tại [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) ghi lại mọi clip, bài đăng và con số, kể cả số liệu xấu.
 
-Bạn có kết quả của riêng mình? [Thêm case study của bạn](CONTRIBUTING.md#case-studies).
+Mục tiêu là có một thư viện case study từ nhiều quốc gia, thể loại và engine. [Thêm case study của bạn](CONTRIBUTING.md#case-studies).
 
 ## 🗺️ Lộ trình
 
@@ -116,7 +116,7 @@ Bạn có kết quả của riêng mình? [Thêm case study của bạn](CONTRIB
 - [ ] `web-portal-publisher`: yêu cầu của CrazyGames / Poki / itch.io, kiểm tra dung lượng WebGL
 - [ ] `feedback-analytics`: sự kiện tối thiểu, funnel, điểm người chơi bỏ cuộc
 - [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`
-- [ ] `sea-vietnam-playbook`: cộng đồng, sự kiện và quy định ở Việt Nam và Đông Nam Á
+- [ ] `regional-playbooks`: cộng đồng, sự kiện, festival và quy định phát hành theo từng quốc gia (bắt đầu với Việt Nam; [thêm khu vực của bạn](CONTRIBUTING.md#regional-communities))
 
 ## 📁 Cấu trúc repo
 
@@ -131,11 +131,11 @@ assets/          logo, banner, icon
 
 ## 🤝 Đóng góp
 
-Cập nhật luật của một cộng đồng? Có case study? Thấy số liệu đã cũ? Xem [CONTRIBUTING.md](CONTRIBUTING.md) và chạy `python3 scripts/validate_skills.py` trước khi mở PR.
+Cập nhật luật của một cộng đồng? Biết các cộng đồng làm game ở nước bạn? Có case study? Thấy số liệu đã cũ? Xem [CONTRIBUTING.md](CONTRIBUTING.md) và chạy `python3 scripts/validate_skills.py` trước khi mở PR.
 
 <div align="center">
 <br>
 <img src="assets/logo.png" width="72" alt="Logo First 1000 Players">
 <br>
-<sub>Giấy phép MIT · Làm tại Việt Nam 🇻🇳 cho vibecoder khắp nơi</sub>
+<sub>Giấy phép MIT · Xây dựng công khai cho vibecoder khắp thế giới 🌍</sub>
 </div>

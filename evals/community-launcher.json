@@ -18,12 +18,12 @@
       ]
     },
     {
-      "prompt": "Viết giúp tôi bài giới thiệu game cho group Indie Games Vietnam và cho r/IndieGaming.",
+      "prompt": "Escreva um post sobre meu jogo para um servidor brasileiro de gamedev no Discord e outro para r/IndieGaming.",
       "expect": [
-        "Writes the Vietnamese post in Vietnamese and the Reddit post in English",
+        "Writes the Brazilian post in Portuguese and the Reddit post in English",
+        "Says there is no Brazil entry yet, suggests how to find local communities, invites a contribution",
         "Different angle per community",
-        "Includes GenAI disclosure for r/IndieGaming if AI was used",
-        "Tells the user to check r/IndieGaming's current sidebar for link rules"
+        "Tells the user to check r/IndieGaming's current sidebar and discloses AI use if any"
       ]
     }
   ]

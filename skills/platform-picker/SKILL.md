@@ -20,7 +20,7 @@ Answer in the user's language. Keep platform names and technical terms in Englis
    - Genre and session length
    - Goal: players & feedback / wishlists / revenue
    - Has the user got a Steam Direct fee budget and time for a store page?
-   - Does the game have online features or target players inside Vietnam? (legal flag, see below)
+   - Does the game have online features, and in which countries will it be sold commercially? (local licensing flag, see below)
 3. Walk the decision tree below.
 4. Read `references/platforms.md` for the facts you cite. Always show the `last_checked` date and tell the user to verify terms on the official page before signing anything.
 5. Output the plan in the format below.
@@ -65,5 +65,5 @@ Mobile: only if controls are touch-native and the user accepts ASO + store revie
 - Never promise income. Portal ad revenue is usually small (see references); present portals as a **player and data** channel first.
 - Flag Poki's exclusivity clearly; recommend the user read the contract.
 - For Steam, mention that wishlists take months to build and shadow-dropping (launching without a page/announcement) is the most common mistake.
-- **Vietnam legal flag:** if the game has online features or is distributed commercially inside Vietnam, mention that Decree 147/2024/NĐ-CP sets licensing and account-verification rules for games, and suggest checking with a local expert. Do not give legal advice.
+- **Local licensing flag:** some countries require a license or government approval to publish games commercially or to run online games (for example Vietnam's Decree 147/2024/NĐ-CP, or approval for publishing in mainland China). If the game targets such a country, mention that rules exist and suggest checking with a local expert. Do not give legal advice, and don't assume rules for a country you have no source for.
 - If a fact is not in `references/platforms.md`, say you are not sure and point to the official docs instead of guessing.

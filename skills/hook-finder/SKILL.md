@@ -9,7 +9,7 @@ Short video is the cheapest way for an unknown game to reach strangers. The job:
 
 ## Language
 
-Answer in the user's language. Write on-screen text in the language of the target platform audience (ask: Vietnamese TikTok vs international).
+Answer in the user's language. Write on-screen text in the language of the target platform audience (ask which country or language audience the clip targets; one clip per language works better than mixed subtitles).
 
 ## Workflow
 

@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
-**English** · [Tiếng Việt](README.vi.md)
+**English** · [Tiếng Việt](README.vi.md) · [+ add your language](docs/i18n/README.md)
 
 **You built the game with AI. Now get it played.**
 
@@ -101,13 +101,13 @@ Every skill reads the same `.agents/game-context.md`, so you explain your game o
 | 🏷️ **Honest about AI** | No skill helps hide AI use. Getting caught hiding it does more damage than saying it up front. |
 | 📅 **Numbers with dates** | Every benchmark has a source and a `last_checked` date, and skills remind you to verify. |
 | 🎲 **No viral promises** | Viral stories are survivors. Skills set realistic gates and measure. |
-| 🌏 **Your language** | Docs in English and Vietnamese. More translations welcome. |
+| 🌍 **Global by default** | Skills answer in the language you write in. Regional community lists and translations come from contributors around the world. |
 
 ## 🌶️ Case study
 
-Every skill is tested first on a real game: a **first-person pepper-farming game set in Đắk Lắk, Vietnam**. The public diary in [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) logs every clip, post and number, bad ones included.
+The first case study is the maintainer's own game: a **first-person pepper-farming game set in Vietnam's Central Highlands**. Its public diary in [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) logs every clip, post and number, bad ones included.
 
-Have your own results? [Add your case study](CONTRIBUTING.md#case-studies).
+The goal is a library of case studies from many countries, genres and engines. [Add yours](CONTRIBUTING.md#case-studies).
 
 ## 🗺️ Roadmap
 
@@ -116,7 +116,7 @@ Have your own results? [Add your case study](CONTRIBUTING.md#case-studies).
 - [ ] `web-portal-publisher`: CrazyGames / Poki / itch.io requirements, WebGL size checks
 - [ ] `feedback-analytics`: minimal events, funnels, drop-off points
 - [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`
-- [ ] `sea-vietnam-playbook`: Vietnamese and Southeast Asian communities, events, rules
+- [ ] `regional-playbooks`: local communities, events, festivals and publishing rules per country (first entries: Vietnam; [add your region](CONTRIBUTING.md#regional-communities))
 
 ## 📁 Repo layout
 
@@ -131,11 +131,11 @@ assets/          logo, banner, icons
 
 ## 🤝 Contributing
 
-Updated a community's rules? Got a case study? Found an outdated number? See [CONTRIBUTING.md](CONTRIBUTING.md) and run `python3 scripts/validate_skills.py` before opening a PR.
+Updated a community's rules? Know the game-dev communities in your country? Got a case study? Found an outdated number? See [CONTRIBUTING.md](CONTRIBUTING.md) and run `python3 scripts/validate_skills.py` before opening a PR.
 
 <div align="center">
 <br>
 <img src="assets/logo.png" width="72" alt="First 1000 Players logo">
 <br>
-<sub>MIT License · Made in Vietnam 🇻🇳 for vibecoders everywhere</sub>
+<sub>MIT License · Built in the open for vibecoders everywhere 🌍</sub>
 </div>

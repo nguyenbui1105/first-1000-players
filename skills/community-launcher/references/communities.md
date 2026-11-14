@@ -4,7 +4,7 @@ Rules change often. Each entry records what was observed and when. **Always open
 
 ## Contents
 1. Reddit
-2. Vietnam
+2. Regional communities
 3. Other channels
 4. Sources
 
@@ -53,29 +53,46 @@ Verification status (2026-11-14): reddit.com could not be read directly from our
 - Participate before you promote: keep self-promotion to roughly 1 in 10 of your posts and comments.
 - Never post the same media to several subreddits on the same day (crosspost spam is a fast route to bans).
 
-## 2. Vietnam
+## 2. Regional communities
 
-### Indie Games Vietnam (indiegamesvn.com)
+Players and devs gather in different places in each country and language. Each region below was added by a contributor who knows it. **Missing your region? Copy the template at the end of this section.**
+
+### Vietnam
+
+#### Indie Games Vietnam (indiegamesvn.com)
 - last_checked: 2026-11
 - Has a game submission form; runs IGVNA 2026 (awards ceremony 2026-12-27) and a streamer program (21 streamers playing 32 Vietnamese indie games, 2026-10-31 → 2026-12-13). Discord ~6.8K members; Facebook page ~7.4K followers.
 
-### GDVN – Game Developer Việt Nam (Discord)
+#### GDVN – Game Developer Việt Nam (Discord)
 - last_checked: 2026-11
 - ~4.7K members. Good for dev feedback and connections. Read channel rules for self-promo channels.
 
-### Saigon Indies (Meetup)
+#### Saigon Indies (Meetup)
 - last_checked: 2026-11
 - ~430 members; in-person meetups in Ho Chi Minh City — good for live playtests.
 
-### Vietnam Game Developers Association (Facebook)
+#### Vietnam Game Developers Association (Facebook)
 - last_checked: 2026-11
 - ~3.4K followers. Industry news, events.
 
-### Vietnam GameVerse / Vietnam Game Awards
+#### Vietnam GameVerse / Vietnam Game Awards
 - last_checked: 2026-11
 - Annual event with an indie award judged by a panel; 2026 had investor pitching (GameHub).
 
-Vietnamese Facebook gaming groups and TikTok: large reach but rules differ per group; ask admins before posting and lead with a fun clip, not a link.
+- Vietnamese Facebook gaming groups and TikTok: large reach but rules differ per group; ask admins before posting and lead with a fun clip, not a link.
+
+### Template for a new region
+
+```markdown
+### <Country or language>
+
+#### <Community name>
+- last_checked: YYYY-MM-DD
+- Link:
+- Size (members/followers):
+- Fit: what kind of game posts work here
+- Rules observed: self-promotion rules, required flair or disclosure
+```
 
 ## 3. Other channels
 

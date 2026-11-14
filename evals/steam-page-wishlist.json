@@ -29,9 +29,9 @@
       ]
     },
     {
-      "prompt": "Kiểm tra giúp tôi kích thước ảnh trong thư mục steam_assets.",
+      "prompt": "帮我检查 steam_assets 文件夹里的图片尺寸。",
       "expect": [
-        "Answers in Vietnamese",
+        "Answers in Simplified Chinese",
         "Runs scripts/check_capsules.py on the folder",
         "Reports missing required sizes and reminds to verify on Steamworks"
       ]

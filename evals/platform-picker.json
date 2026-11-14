@@ -20,10 +20,10 @@
       ]
     },
     {
-      "prompt": "Game online của tôi muốn phát hành cho người chơi Việt Nam, nên đăng ở đâu?",
+      "prompt": "Quiero lanzar mi juego online para jugadores en Vietnam y en China. ¿Dónde lo publico primero?",
       "expect": [
-        "Answers in Vietnamese",
-        "Flags Decree 147/2024 licensing without giving legal advice",
+        "Answers in Spanish",
+        "Flags that some countries (e.g. Vietnam, mainland China) require game licensing or approval, without giving legal advice",
         "Produces a staged plan in the output format"
       ]
     }

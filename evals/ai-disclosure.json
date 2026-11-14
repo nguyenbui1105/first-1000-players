@@ -19,12 +19,12 @@
       ]
     },
     {
-      "prompt": "Đăng lên itch.io thì khai AI thế nào?",
+      "prompt": "itch.ioで公開するとき、生成AIの使用はどう開示すればいいですか？",
       "expect": [
-        "Answers in Vietnamese",
+        "Answers in Japanese",
         "Explains the Generative AI disclosure field and sub-tags",
         "Mentions the No AI filter now applies to search",
-        "Drafts a one-line description in English"
+        "Drafts a one-line English description for the itch.io page"
       ]
     }
   ]
