@@ -1,28 +1,53 @@
-# 🎮 First 1000 Players
+<div align="center">
+
+<img src="assets/banner.png" alt="First 1000 Players: bộ agent skill giúp vibecoder đưa game làm bằng AI đến người chơi" width="100%">
+
+<br>
+
+[![Validate skills](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml/badge.svg)](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-open%20standard-3DDC84?style=flat-square)](https://agentskills.io)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-FFC547?style=flat-square)](#-cài-đặt)
+[![Skills](https://img.shields.io/badge/skills-5-FF5A5F?style=flat-square)](#-các-skill)
+[![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
 [English](README.md) · **Tiếng Việt**
 
-> AI giúp làm game dễ hơn bao giờ hết. Nhưng để có người chơi thì vẫn khó.
-> **First 1000 Players** là bộ agent skill giúp các vibecoder làm game bằng AI đưa game từ "chạy được" đến 1.000 người chơi thật đầu tiên — minh bạch, không spam.
+**Bạn đã làm game bằng AI. Giờ hãy đưa game đến người chơi.**
 
-Năm 2025 có khoảng 20.000 game ra mắt trên Steam. Chỉ ~3% đạt 1.000 review, và game trung vị chỉ kiếm được vài trăm đô ([số liệu](references/market.md)). Làm game không còn là nút thắt. **Được người chơi nhìn thấy mới là nút thắt.**
+[Các skill](#-các-skill) · [Cài đặt](#-cài-đặt) · [Cách hoạt động](#-cách-hoạt-động) · [Case study](#️-case-study) · [Lộ trình](#️-lộ-trình)
 
-Đã có bộ skill marketing cho SaaS, đã có bộ skill để code game. Bộ này lo đúng khâu ở giữa: **phân phối cho game nhỏ làm bằng AI** — web portal, itch.io, Steam, video ngắn, cộng đồng, và câu hỏi "có nên khai dùng AI không" mà vibecoder nào cũng gặp.
+</div>
 
-## Các skill
+---
 
-| Skill | Dùng khi bạn muốn… |
-|---|---|
-| [`game-context`](skills/game-context/SKILL.md) | mô tả game một lần, để mọi skill khác biết thể loại, người chơi mục tiêu, nền tảng và việc dùng AI |
-| [`platform-picker`](skills/platform-picker/SKILL.md) | chọn nơi phát hành trước (CrazyGames, Poki, itch.io, Steam…) và bước tiếp theo |
-| [`hook-finder`](skills/hook-finder/SKILL.md) | tìm khoảnh khắc khiến người lạ dừng lướt, rồi biến thành clip TikTok/Shorts |
-| [`community-launcher`](skills/community-launcher/SKILL.md) | giới thiệu game trên Reddit, Discord, nhóm Việt Nam mà không vi phạm luật (chỉ soạn nháp) |
-| [`ai-disclosure`](skills/ai-disclosure/SKILL.md) | viết phần khai báo AI trung thực cho Steam, itch.io, Reddit và giảm phản ứng tiêu cực |
+## 🎯 Vì sao có repo này
 
-Sắp có: `steam-page-wishlist`, `web-portal-publisher`, `feedback-analytics`, `launch-checklist`, `devlog-buildinpublic`, `creator-outreach`, `sea-vietnam-playbook`.
+AI giúp làm game rẻ hơn rất nhiều, nhưng sự chú ý của người chơi thì không rẻ đi.
 
-## Cài đặt
+<table>
+<tr>
+<td align="center" width="33%"><h3>~20.000</h3>game ra mắt trên Steam năm 2025</td>
+<td align="center" width="33%"><h3>~3%</h3>trong số đó đạt 1.000 review</td>
+<td align="center" width="33%"><h3>~$249</h3>doanh thu trung vị (theo một ước tính)</td>
+</tr>
+</table>
 
+<sub>Nguồn và lưu ý tại <a href="references/market.md">references/market.md</a>.</sub>
+
+Đã có bộ skill marketing cho SaaS, đã có bộ skill để code game. **First 1000 Players** lo đúng khâu ở giữa: **phân phối cho game nhỏ làm bằng AI**. Đó là web portal, itch.io, Steam, video ngắn, cộng đồng, và câu hỏi "có nên khai dùng AI không" mà vibecoder nào cũng gặp.
+
+## 🧩 Các skill
+
+| | Skill | Dùng khi bạn muốn… |
+|:-:|---|---|
+| <img src="assets/icon-game-context.png" width="44"> | [**game-context**](skills/game-context/SKILL.md) | mô tả game một lần, để mọi skill khác biết thể loại, người chơi mục tiêu, nền tảng và việc dùng AI |
+| <img src="assets/icon-platform-picker.png" width="44"> | [**platform-picker**](skills/platform-picker/SKILL.md) | chọn nơi phát hành trước (CrazyGames, Poki, itch.io, Steam) và bước tiếp theo |
+| <img src="assets/icon-hook-finder.png" width="44"> | [**hook-finder**](skills/hook-finder/SKILL.md) | tìm khoảnh khắc khiến người lạ dừng lướt và cắt thành clip TikTok / Shorts |
+| <img src="assets/icon-community-launcher.png" width="44"> | [**community-launcher**](skills/community-launcher/SKILL.md) | giới thiệu game trên Reddit, Discord, nhóm Việt Nam mà không vi phạm luật (chỉ soạn nháp) |
+| <img src="assets/icon-ai-disclosure.png" width="44"> | [**ai-disclosure**](skills/ai-disclosure/SKILL.md) | viết phần khai báo AI trung thực cho Steam, itch.io, Reddit và giảm phản ứng tiêu cực |
+
+## ⚡ Cài đặt
 
 **Claude Code (plugin)**
 ```
@@ -35,47 +60,79 @@ Sắp có: `steam-page-wishlist`, `web-portal-publisher`, `feedback-analytics`, 
 npx skills add nguyenbui1105/first-1000-players
 ```
 
-**Thủ công** — chép các thư mục trong `skills/` vào:
-- Claude Code: `.claude/skills/` (theo project) hoặc `~/.claude/skills/` (dùng chung)
-- Codex: `.agents/skills/`
-- Cursor: `.cursor/skills/`
+<details>
+<summary><b>Cài thủ công</b></summary>
 
-## Bắt đầu nhanh
+Chép các thư mục trong `skills/` vào:
 
-Mở project game cùng agent của bạn và gõ:
+| Agent | Thư mục |
+|---|---|
+| Claude Code | `.claude/skills/` (theo project) hoặc `~/.claude/skills/` (dùng chung) |
+| Codex | `.agents/skills/` |
+| Cursor | `.cursor/skills/` |
+
+</details>
+
+## 🔁 Cách hoạt động
+
+Mở project game cùng agent và gõ **"Giúp tôi tìm những người chơi đầu tiên cho game."**
+
+```mermaid
+flowchart LR
+    A["🗂️ game-context<br/>mô tả game một lần"] --> B["🧭 platform-picker<br/>đăng game ở đâu trước"]
+    B --> C["🎬 hook-finder<br/>clip khiến người xem dừng lướt"]
+    C --> D["🤝 community-launcher<br/>đăng bài không spam"]
+    A -.-> E["🏷️ ai-disclosure<br/>khai báo AI trung thực"]
+    E -.-> D
+    D --> F(("📈 đo lường,<br/>lặp lại"))
+    F --> C
+```
+
+Mọi skill đọc chung file `.agents/game-context.md`, nên bạn chỉ cần mô tả game một lần. Skill trả lời **theo ngôn ngữ bạn viết**.
+
+## 🧭 Nguyên tắc
+
+| | |
+|---|---|
+| ✍️ **Soạn nháp, không làm bot** | Skill không bao giờ tự đăng bài, bình luận hay nhắn tin thay bạn. Bạn là người đăng. |
+| 🏷️ **Minh bạch về AI** | Không skill nào giúp che giấu việc dùng AI. Bị phát hiện che giấu còn tệ hơn tự khai. |
+| 📅 **Số liệu có ngày** | Mọi con số đều có nguồn và ngày kiểm tra (`last_checked`), và skill luôn nhắc bạn kiểm tra lại. |
+| 🎲 **Không hứa viral** | Câu chuyện viral là của số ít người may mắn. Skill đặt mục tiêu thực tế và đo lường. |
+| 🌏 **Ngôn ngữ của bạn** | Tài liệu có tiếng Anh và tiếng Việt, hoan nghênh thêm bản dịch. |
+
+## 🌶️ Case study
+
+Mọi skill được thử trước trên một game thật: **game trồng tiêu góc nhìn thứ nhất lấy bối cảnh Đắk Lắk**. Nhật ký công khai tại [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) ghi lại mọi clip, bài đăng và con số, kể cả số liệu xấu.
+
+Bạn có kết quả của riêng mình? [Thêm case study của bạn](CONTRIBUTING.md#case-studies).
+
+## 🗺️ Lộ trình
+
+- [x] `game-context` · `platform-picker` · `hook-finder` · `community-launcher` · `ai-disclosure`
+- [ ] `steam-page-wishlist`: kiểm tra trang Steam, tag, demo, Next Fest, Personal Calendar
+- [ ] `web-portal-publisher`: yêu cầu của CrazyGames / Poki / itch.io, kiểm tra dung lượng WebGL
+- [ ] `feedback-analytics`: sự kiện tối thiểu, funnel, điểm người chơi bỏ cuộc
+- [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`
+- [ ] `sea-vietnam-playbook`: cộng đồng, sự kiện và quy định ở Việt Nam và Đông Nam Á
+
+## 📁 Cấu trúc repo
 
 ```
-Giúp tôi tìm những người chơi đầu tiên cho game.
-```
-
-Agent sẽ chạy `game-context`, tạo file `.agents/game-context.md`, rồi gợi ý `platform-picker` và `hook-finder`. Skill trả lời bằng tiếng Việt nếu bạn viết tiếng Việt.
-
-## Nguyên tắc
-
-1. **Soạn nháp, không làm bot.** Skill không bao giờ tự đăng bài, bình luận hay nhắn tin thay bạn. Bạn là người đăng.
-2. **Minh bạch về AI.** Không skill nào giúp che giấu việc dùng AI. Bị phát hiện còn tệ hơn tự khai.
-3. **Số liệu có ngày.** Mọi con số đều có nguồn và ngày kiểm tra (`last_checked`). Nền tảng thay đổi liên tục, nên skill luôn nhắc bạn kiểm tra lại.
-4. **Không hứa viral.** Câu chuyện viral là của số ít người sống sót. Skill đặt mục tiêu thực tế và đo lường.
-5. **Ngôn ngữ của bạn.** Skill trả lời theo ngôn ngữ bạn dùng. Tài liệu có tiếng Anh và tiếng Việt, hoan nghênh thêm ngôn ngữ khác.
-
-## Case study
-
-Mọi skill được thử trước trên một game thật: game trồng tiêu góc nhìn thứ nhất lấy bối cảnh Đắk Lắk. Theo dõi nhật ký công khai tại [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md), kể cả số liệu xấu.
-
-## Cấu trúc repo
-
-```
-skills/          mỗi skill một thư mục (SKILL.md + references/ + scripts/)
+skills/          mỗi skill một thư mục: SKILL.md + references/ + scripts/
 references/      số liệu thị trường dùng chung, có nguồn
 evals/           ít nhất 3 câu test cho mỗi skill
-scripts/         validate_skills.py
+scripts/         validate_skills.py (chạy tự động trên CI)
 case-studies/    nhật ký phân phối thật
+assets/          logo, banner, icon
 ```
 
-## Đóng góp
+## 🤝 Đóng góp
 
-Cập nhật luật của một cộng đồng? Có case study của game bạn? Xem [CONTRIBUTING.md](CONTRIBUTING.md). Chạy `python3 scripts/validate_skills.py` trước khi mở PR.
+Cập nhật luật của một cộng đồng? Có case study? Thấy số liệu đã cũ? Xem [CONTRIBUTING.md](CONTRIBUTING.md) và chạy `python3 scripts/validate_skills.py` trước khi mở PR.
 
-## Giấy phép
-
-MIT
+<div align="center">
+<br>
+<img src="assets/logo.png" width="72" alt="Logo First 1000 Players">
+<br>
+<sub>Giấy phép MIT · Làm tại Việt Nam 🇻🇳 cho vibecoder khắp nơi</sub>
+</div>
