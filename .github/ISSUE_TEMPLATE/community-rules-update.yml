@@ -1,0 +1,30 @@
+name: Community rules update
+description: A subreddit, Discord or group changed its rules
+title: "[rules] <community name>"
+labels: [rules-update]
+body:
+  - type: input
+    id: community
+    attributes:
+      label: Community
+      placeholder: r/playmygame
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed?
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the current rules
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date you checked (YYYY-MM-DD)
+    validations:
+      required: true

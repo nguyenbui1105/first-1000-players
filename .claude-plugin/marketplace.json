@@ -1,0 +1,26 @@
+{
+  "name": "first-1000-players",
+  "owner": {
+    "name": "Nguyen Bui"
+  },
+  "metadata": {
+    "description": "Agent skills that help AI vibecoders get their games in front of their first 1,000 players.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "first-1000-players",
+      "description": "Game distribution skills for AI vibecoders: game context, platform choice, clip hooks, community launch, AI disclosure, Steam page and wishlists.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/game-context",
+        "./skills/platform-picker",
+        "./skills/hook-finder",
+        "./skills/community-launcher",
+        "./skills/ai-disclosure",
+        "./skills/steam-page-wishlist"
+      ]
+    }
+  ]
+}

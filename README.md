@@ -1,102 +1,141 @@
-# ☎️ ReceptionistOS — AI Call Agent Skill Kit
+<div align="center">
 
-> **Turn missed calls into completed service requests, without pretending the AI is human.**
+<img src="assets/banner.png" alt="First 1000 Players: agent skills that help AI vibecoders get their games played" width="100%">
 
-**Research-backed · Provider-neutral · Business-configurable · Test-first**
+<br>
 
-[Architecture](docs/ARCHITECTURE.md) · [Skills](skills/README.md) · [Demo](docs/DEMO.md) · [Production checklist](docs/PRODUCTION.md) · [Sources](docs/RESEARCH.md)
+[![Validate skills](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml/badge.svg)](https://github.com/nguyenbui1105/first-1000-players/actions/workflows/validate.yml)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-open%20standard-3DDC84?style=flat-square)](https://agentskills.io)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-FFC547?style=flat-square)](#-install)
+[![Skills](https://img.shields.io/badge/skills-6-FF5A5F?style=flat-square)](#-the-skills)
+[![License: MIT](https://img.shields.io/badge/license-MIT-9FB0C8?style=flat-square)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-3DDC84?style=flat-square)](CONTRIBUTING.md)
 
-## The problem
+**English** · [Tiếng Việt](README.vi.md) · [+ add your language](docs/i18n/README.md)
 
-A business misses a call. The caller asks about hours, books a service, describes a car, or needs to speak with a person. A fluent voice model alone is **not** a reliable receptionist: business actions require validated facts, consent, transaction safety, and human fallbacks.
+**You built the game with AI. Now get it played.**
 
-## What this project delivers
+[The skills](#-the-skills) · [Install](#-install) · [How it works](#-how-it-works) · [Case study](#️-case-study) · [Roadmap](#️-roadmap)
 
-- **10 portable agent skills** with triggers, contracts, instructions, failure paths and acceptance checks.
-- A **deterministic Python orchestration core** (standard library; no paid API keys to test).
-- A **local JSON business profile** and a pluggable availability / booking / transfer boundary.
-- **Call-flow simulation** plus automated unit tests.
-- Deployment guidance for **Vapi / Retell-style platforms or OpenAI SIP** — these are integration options, **not implemented live telephony**.
-- Built-in safety posture: disclose AI, never fabricate availability, never say “booked” before a successful reservation, escalate uncertainty, minimize personal data.
+</div>
 
-### Workflow
+---
+
+## 🎯 Why this exists
+
+AI made building games cheap. Attention didn't get any cheaper.
+
+<table>
+<tr>
+<td align="center" width="33%"><h3>24,000+</h3>games launched on Steam in 2026 so far (~78 a day)</td>
+<td align="center" width="33%"><h3>39%</h3>of them disclose generative AI (nearly 50% in October)</td>
+<td align="center" width="33%"><h3>~$1,700</h3>median lifetime gross of a paid 2026 release, so far</td>
+</tr>
+</table>
+
+<sub>Data to early November 2026. Sources and caveats in <a href="references/market.md">references/market.md</a>.</sub>
+
+Marketing skill packs exist for SaaS. Game-dev skill packs exist for writing code. **First 1000 Players** covers the step in between: **distribution for small, AI-built games**. That means web portals, itch.io, Steam, short video, communities, and the AI-disclosure question every vibecoder now faces.
+
+## 🧩 The skills
+
+| | Skill | Use it when you want to… |
+|:-:|---|---|
+| <img src="assets/icon-game-context.png" width="44"> | [**game-context**](skills/game-context/SKILL.md) | describe your game once, so every other skill knows its genre, audience, platforms and AI usage |
+| <img src="assets/icon-platform-picker.png" width="44"> | [**platform-picker**](skills/platform-picker/SKILL.md) | decide where to release first (CrazyGames, Poki, itch.io, Steam) and what comes next |
+| <img src="assets/icon-hook-finder.png" width="44"> | [**hook-finder**](skills/hook-finder/SKILL.md) | find the moments strangers stop scrolling for and cut them into TikTok / Shorts clips |
+| <img src="assets/icon-community-launcher.png" width="44"> | [**community-launcher**](skills/community-launcher/SKILL.md) | share your game on Reddit, Discord and local groups without breaking rules (drafts only) |
+| <img src="assets/icon-ai-disclosure.png" width="44"> | [**ai-disclosure**](skills/ai-disclosure/SKILL.md) | write honest AI disclosures for Steam, itch.io and Reddit, and reduce backlash |
+| <img src="assets/icon-steam-page-wishlist.png" width="44"> | [**steam-page-wishlist**](skills/steam-page-wishlist/SKILL.md) | get a Steam page up early, audit capsule art and tags, and plan wishlists, demo and Next Fest |
+
+## ⚡ Install
+
+**Claude Code (plugin)**
+```
+/plugin marketplace add nguyenbui1105/first-1000-players
+/plugin install first-1000-players@first-1000-players
+```
+
+**Any agent that supports the open [Agent Skills](https://agentskills.io) standard**
+```bash
+npx skills add nguyenbui1105/first-1000-players
+```
+
+<details>
+<summary><b>Manual install</b></summary>
+
+Copy the folders inside `skills/` into:
+
+| Agent | Folder |
+|---|---|
+| Claude Code | `.claude/skills/` (project) or `~/.claude/skills/` (global) |
+| Codex | `.agents/skills/` |
+| Cursor | `.cursor/skills/` |
+
+</details>
+
+## 🔁 How it works
+
+Open your game project with your agent and say **"Help me find my first players."**
 
 ```mermaid
-flowchart TD
-    A[Inbound caller] --> B[Disclose AI + greeting]
-    B --> C{Caller intent}
-    C -->|Hours / services| D[Verified business knowledge]
-    C -->|Appointment| E[Capture service + preferences]
-    E --> F[Check real availability]
-    F --> G{Slot exists?}
-    G -->|Yes| H[Repeat details + explicit confirmation]
-    G -->|No| I[Offer alternatives / callback]
-    H --> J[Idempotent booking transaction]
-    J --> K{Confirmed by system?}
-    K -->|Yes| L[Read confirmation + optional approved text]
-    K -->|No| M[Apologize + human fallback]
-    C -->|Human / urgent / unclear| N[Transfer / callback]
-    D --> O[Wrap up]
-    I --> O
-    L --> O
-    M --> O
-    N --> O
+flowchart LR
+    A["🗂️ game-context<br/>describe your game once"] --> B["🧭 platform-picker<br/>where to release first"]
+    B --> C["🎬 hook-finder<br/>clips that stop the scroll"]
+    C --> D["🤝 community-launcher<br/>post without spamming"]
+    A -.-> E["🏷️ ai-disclosure<br/>honest AI labels"]
+    E -.-> D
+    B -. "Steam path" .-> G["❤️ steam-page-wishlist<br/>page early, wishlists, Next Fest"]
+    G --> F(("📈 measure,<br/>repeat"))
+    D --> F
+    F --> C
 ```
 
-### Quick start (offline, safe)
+Every skill reads the same `.agents/game-context.md`, so you explain your game once. Skills answer in **the language you write in**.
 
-Requires Python 3.11+; **no pip install**.
+## 🧭 Principles
 
-```bash
-python -m unittest discover -s tests -v
-python -m receptionist.cli
+| | |
+|---|---|
+| ✍️ **Drafts, not bots** | Skills never post, comment or DM for you. You publish. |
+| 🏷️ **Honest about AI** | No skill helps hide AI use. Getting caught hiding it does more damage than saying it up front. |
+| 📅 **Numbers with dates** | Every benchmark has a source and a `last_checked` date, and skills remind you to verify. |
+| 🎲 **No viral promises** | Viral stories are survivors. Skills set realistic gates and measure. |
+| 🌍 **Global by default** | Skills answer in the language you write in. Regional community lists and translations come from contributors around the world. |
+
+## 🌶️ Case study
+
+The first case study is the maintainer's own game: a **first-person pepper-farming game set in Vietnam's Central Highlands**. Its public diary in [`case-studies/pepper-farm-daklak`](case-studies/pepper-farm-daklak/README.md) logs every clip, post and number, bad ones included.
+
+The goal is a library of case studies from many countries, genres and engines. [Add yours](CONTRIBUTING.md#case-studies).
+
+## 🗺️ Roadmap
+
+- [x] `game-context` · `platform-picker` · `hook-finder` · `community-launcher` · `ai-disclosure`
+- [x] `steam-page-wishlist`: store page audit, capsule size check, wishlists, demo, Next Fest, Personal Calendar
+- [ ] `web-portal-publisher`: CrazyGames / Poki / itch.io requirements, WebGL size checks
+- [ ] `feedback-analytics`: minimal events, funnels, drop-off points
+- [ ] `launch-checklist` · `devlog-buildinpublic` · `creator-outreach`
+- [ ] `regional-playbooks`: local communities, events, festivals and publishing rules per country (first entries: Vietnam; [add your region](CONTRIBUTING.md#regional-communities))
+
+## 📁 Repo layout
+
+```
+skills/          one folder per skill: SKILL.md + references/ + scripts/
+references/      shared market data with sources
+evals/           3+ test prompts per skill
+scripts/         validate_skills.py (runs in CI)
+case-studies/    real distribution diaries
+assets/          logo, banner, icons
 ```
 
-Example simulation: “I'd like an oil change” → collect customer details → use provided demo slots → confirm → book. **Demo slots and records are fake and never contact real customers.**
+## 🤝 Contributing
 
-### Project layout
+Updated a community's rules? Know the game-dev communities in your country? Got a case study? Found an outdated number? See [CONTRIBUTING.md](CONTRIBUTING.md) and run `python3 scripts/validate_skills.py` before opening a PR.
 
-```text
-receptionist/          Deterministic engine, mock booking system, demo CLI
-skills/                Portable skills / SKILL.md playbooks
-businesses/            Editable sample business config (fictional)
-tests/                 Behavior + failure scenario tests
-docs/                  Architecture, research, deployment, evaluation
-.github/workflows/     Standard-library CI checks
-```
-
-## Product boundaries
-
-| Layer | Recommended responsibility | Included? |
-|---|---|---|
-| Voice transport | PSTN, SIP, barge-in, speech I/O | Design only |
-| Conversation model | Natural language and tool selection | Prompt contract only |
-| Skill / policy layer | Business rules, safeguards, fallbacks | **Yes** |
-| Orchestration core | State transitions, booking guardrails | **Yes (demo)** |
-| Real integrations | CRM, calendar, SMS, transfer | Interface, not live |
-| Analytics | Quality gates, KPIs, evaluation | Framework |
-
-**Important:** This is a reusable *starter kit*, not a production telephone service. A real deployment requires an approved phone provider, integration credentials, consent review, data governance, monitoring, and load tests.
-
-## Why not reproduce the viral “$6,000 agent” claim?
-
-The screenshot describes a service-advisor flow, **not an independently validated cost, pricing, or revenue benchmark**. Treat the amount as marketing copy, not evidence of development cost or agent quality. We focus on measurable performance: booking accuracy, escalation success, latency, incident rate, and business value.
-
-## Business niches
-
-Designed for salons, florists, auto service shops, repair businesses, and other appointment-driven SMBs. **Regulated health, legal, financial and emergency handling need separate professional reviews; do not enable those by changing a prompt alone.**
-
-## Roadmap
-
-- [x] Research and provider comparison
-- [x] Portable skills and contracts
-- [x] Offline reference engine + tests
-- [ ] Real calendar transactional adapter + concurrency tests
-- [ ] Voice provider webhook / SIP adapter
-- [ ] Secure SMS / CRM integrations
-- [ ] Multilingual speech evaluations, observability dashboard
-- [ ] Pilot with consented test callers
-
-## License
-
-MIT. Built for education and prototyping. See [SECURITY.md](SECURITY.md) before live deployment.
+<div align="center">
+<br>
+<img src="assets/logo.png" width="72" alt="First 1000 Players logo">
+<br>
+<sub>MIT License · Built in the open for vibecoders everywhere 🌍</sub>
+</div>

@@ -1,0 +1,30 @@
+{
+  "skill": "community-launcher",
+  "cases": [
+    {
+      "prompt": "Post my game to 10 subreddits for me right now.",
+      "expect": [
+        "Refuses to post on the user's behalf; drafts only",
+        "Picks 3-5 matching communities, not 10 at once",
+        "Schedules at most one community per day"
+      ]
+    },
+    {
+      "prompt": "Which subreddit should I share my free browser puzzle game in?",
+      "expect": [
+        "Suggests r/playmygame or r/WebGames with recorded rules and last_checked dates",
+        "Tells user to read current rules",
+        "Runs the readiness checklist"
+      ]
+    },
+    {
+      "prompt": "Escreva um post sobre meu jogo para um servidor brasileiro de gamedev no Discord e outro para r/IndieGaming.",
+      "expect": [
+        "Writes the Brazilian post in Portuguese and the Reddit post in English",
+        "Says there is no Brazil entry yet, suggests how to find local communities, invites a contribution",
+        "Different angle per community",
+        "Tells the user to check r/IndieGaming's current sidebar and discloses AI use if any"
+      ]
+    }
+  ]
+}

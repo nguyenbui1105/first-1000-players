@@ -1,0 +1,31 @@
+{
+  "skill": "platform-picker",
+  "cases": [
+    {
+      "prompt": "Where should I publish my 6 MB Phaser endless runner? I just want people to play it.",
+      "expect": [
+        "Recommends web portals/itch.io as stage 1",
+        "Mentions Poki exclusivity if Poki is suggested",
+        "Gives a measurable gate before Steam",
+        "Does not promise income"
+      ]
+    },
+    {
+      "prompt": "I have a 900 MB Unity cozy farming sim and want revenue. Should I go Steam?",
+      "expect": [
+        "Recommends Steam Coming Soon page early",
+        "Suggests a downloadable demo or web slice for testing",
+        "Warns against shadow-dropping",
+        "Shows last_checked date and tells user to verify terms"
+      ]
+    },
+    {
+      "prompt": "Quiero lanzar mi juego online para jugadores en Vietnam y en China. ¿Dónde lo publico primero?",
+      "expect": [
+        "Answers in Spanish",
+        "Flags that some countries (e.g. Vietnam, mainland China) require game licensing or approval, without giving legal advice",
+        "Produces a staged plan in the output format"
+      ]
+    }
+  ]
+}
