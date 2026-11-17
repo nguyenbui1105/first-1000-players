@@ -1,6 +1,11 @@
 __pycache__/
-*.pyc
-.DS_Store
-clips/
-*.mp4
-*.mov
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.log
+*.wav
+*.mp3
+recordings/
+transcripts/
