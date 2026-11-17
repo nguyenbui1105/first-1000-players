@@ -1,0 +1,15 @@
+{
+  "business_id": "maple-auto-demo",
+  "name": "Maple Auto Care (FICTIONAL DEMO)",
+  "timezone": "America/Los_Angeles",
+  "phone": "+15035550142",
+  "location": "123 Example Avenue, Portland, OR (FICTIONAL)",
+  "hours": {"monday": "08:00-17:00", "tuesday": "08:00-17:00", "sunday": "closed"},
+  "services": ["oil change", "brake inspection", "tire rotation"],
+  "prices": {},
+  "record_calls": false,
+  "allow_transactional_sms": false,
+  "human_transfer_enabled": false,
+  "updated_at": "2026-11-16",
+  "source": "fictional demonstration data"
+}
